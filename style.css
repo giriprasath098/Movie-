@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:550px;
+}
+
+.form-section{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+h2{
+    text-align:center;
+    color:#fff;
+    font-size:34px;
+    margin-bottom:25px;
+    text-shadow:0 0 15px #ff4d4d;
+}
+
+label{
+    display:block;
+    color:white;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,0.15);
+    color:white;
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+input::placeholder{
+    color:#ddd;
+}
+
+input:focus{
+    outline:none;
+    box-shadow:0 0 15px #ff4d4d;
+}
+
+.btn-add{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(45deg,#ff512f,#dd2476);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-add:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 0 25px #ff512f;
+}
+
+a{
+    text-decoration:none;
+}
+
+a button{
+    margin-top:20px;
+    width:250px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+a button:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 0 25px #00c6ff;
+}
+
+.form-section:hover{
+    box-shadow:0 0 40px rgba(255,77,77,0.4);
+}

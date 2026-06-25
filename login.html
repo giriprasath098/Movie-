@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Add New Movie</h2>
+            <form action="/submited" method="post" id="movieForm">
+                <label for="name">Movie Name: *</label>
+                <input type="text" id="name" name="name" required />
+                <br>
+                <br>
+                <label for="link">Poster Link (URL): *</label>
+                <input type="url" id="link" name="link" required />
+                <br>
+                <br>
+               
+                <label for="genre">Genre: *</label>
+                <input type="text" id="genre" name="genre" required />
+                <br>
+                <br>
+               
+                <label for="rate">Rating (1-10): *</label>
+                <input type="number" id="rate" name="rate" min="1" max="10" required />
+                <br>
+                <br>
+               
+                <label for="time">Schedule/Time: *</label>
+                <input type="text" id="time" name="time" placeholder="e.g., 7:30 PM" required />
+                <br>
+                <br>
+               
+                <button type="submit" class="btn-add">Add Movie</button>
+            </form>
+        </div>
+    </div>
+    <a href="/allMovies"><button>All Movies</button></a>
+</body>
+</html>
